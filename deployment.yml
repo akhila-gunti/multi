@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: agunti1/multi:latest
+        image: akkiiiii.azurecr.io/agunti1/multi:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:
+        - name: secret1  
